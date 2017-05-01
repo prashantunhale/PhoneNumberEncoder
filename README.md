@@ -17,12 +17,15 @@ For example:
 ## Pre-requisites
 - Java 8 (JDK 1.8.0_121)
 - Gradle 3.5
+- Maven
 
 ### Step 1: Install and build
 Go to project directory and build the project
 ```
 cd C:\Users\User\IdeaProjects\PhoneNumberEncoder
 gradle clean build
+or
+mvn clean package
 ```
 
 ### Step 2: Usage
@@ -33,6 +36,12 @@ Results would be displayed on the console
 ```
 cd C:\Users\User\IdeaProjects\PhoneNumberEncoder\
 java -jar build\libs\PhoneNumberEncoder-all-1.0-SNAPSHOT.jar src\main\resources\dictionary.txt src\main\resources\input.txt
+or
+java -jar target\PhoneNumberEncoder-1.0-SNAPSHOT.jar src\main\resources\dictionary.txt src\main\resources\input.txt
+```
+
+Results would be displayed on the console
+```
 
 Output snippet:
 48746879300588803: Flut 6 Lug See Moll es
